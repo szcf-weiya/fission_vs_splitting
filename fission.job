@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=data-fission
+#SBATCH --mail-type=ALL
+#SBATCH --mem-per-cpu 10G
+#SBATCH --partition scavenge,day,pi_zhao
+#SBATCH --time 24:00:00
+
+cd ../src
+module purge
+module load R/4.2.0-foss-2020b
+module unload GLib/2.66.1-GCCcore-10.2.0
+module load Julia/1.9.2-linux-x86_64
+
+julia --project=.. -p $ncpu -L data-fission.jl -e "@time run_fission_ds_dd(nrep = 100, σ = $sigma, ρ = $rho, δ = $delta)"
