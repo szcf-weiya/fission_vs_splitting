@@ -2,7 +2,8 @@
 
 Code for 
 
-> Wang, L., & Zhao, H. (2024). Comments on “Data fission: splitting a single data point” by James Leiner, Boyan Duan, Larry Wasserman, and Aaditya Ramdas. Journal of the American Statistical Association: Theory and Methods, to appear.
+> Wang, L., & and Zhao, H. (2025). Comments on “Data Fission: Splitting a Single Data Point” by James Leiner, Boyan Duan, Larry Wasserman, and Aaditya Ramdas. Journal of the American Statistical Association, 120(549), 176. https://doi.org/10.1080/01621459.2024.2412808
+
 
 Submit the job file
 
